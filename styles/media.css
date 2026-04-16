@@ -1,0 +1,273 @@
+/* =============================================
+   MEDIA QUERIES — Responsive Styles
+   Breakpoints: 1024px | 768px | 480px
+   ============================================= */
+
+
+/* ── Large tablets / small laptops ──────────── */
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Nav */
+    .nav_links-link {
+        font-size: 16px;
+    }
+
+    .nav_logos {
+        gap: 20px;
+    }
+
+    /* Header */
+    .header_about-title {
+        font-size: 72px;
+    }
+
+    .header_about {
+        height: 550px;
+    }
+
+    /* Sections */
+    .about_first-text,
+    .about_second-text {
+        font-size: 18px;
+        width: 45%;
+    }
+
+    .about_first-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .about_second-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .about_third-text {
+        font-size: 16px;
+        width: 28%;
+    }
+
+    .about_third-img {
+        width: 35%;
+        height: auto;
+    }
+
+    /* Cards */
+    .cards {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .cards_card {
+        width: 220px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/* ── Tablets ─────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* Nav */
+    .nav .container {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    .nav_logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav_links {
+        gap: 15px;
+    }
+
+    .nav_links-link {
+        font-size: 14px;
+    }
+
+    .nav_buttons {
+        gap: 15px;
+    }
+
+    /* Header */
+    .header_about {
+        height: 420px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header_about-title {
+        font-size: 52px;
+    }
+
+    .header_about-link {
+        font-size: 16px;
+        width: 170px;
+        height: 44px;
+    }
+
+    /* Sections — stack vertically */
+    .about_first,
+    .about_second {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .about_first-text,
+    .about_second-text {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .about_first-img,
+    .about_second-img {
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+    }
+
+    /* Third section */
+    .about_third {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .about_third-text {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Hide decorative lines on mobile */
+    .about_third-text-left::after,
+    .about_third-text-right::before {
+        display: none;
+    }
+
+    .about_third-img {
+        width: 60%;
+        max-width: 320px;
+        height: auto;
+        order: -1;
+    }
+
+    /* Cards */
+    .cards {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .cards_card {
+        width: 200px;
+        min-height: 290px;
+    }
+
+    /* Footer */
+    .footer_links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer_links-logo {
+        font-size: 16px;
+    }
+}
+
+
+/* ── Mobile phones ───────────────────────────── */
+@media (max-width: 480px) {
+
+    /* Nav */
+    .nav_links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav_links-link {
+        font-size: 13px;
+    }
+
+    /* Header */
+    .header_about {
+        height: 360px;
+        gap: 16px;
+    }
+
+    .header_about-title {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .header_about-link {
+        font-size: 14px;
+        width: 150px;
+        height: 40px;
+    }
+
+    /* Sections */
+    .about_first-text,
+    .about_second-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .about_first-img,
+    .about_second-img {
+        width: 95%;
+    }
+
+    .about_third-img {
+        width: 75%;
+    }
+
+    /* Cards — single column */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .cards_card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 24px 15px;
+    }
+
+    .footer_cards {
+        gap: 20px;
+    }
+}
